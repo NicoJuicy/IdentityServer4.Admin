@@ -84,7 +84,10 @@ namespace Skoruba.IdentityServer4.STS.Identity.Helpers
 
                     try
                     {
-                        builder.AddSigningCredential(new X509Certificate2(certificateConfiguration.SigningCertificatePfxFilePath, certificateConfiguration.SigningCertificatePfxFilePassword));
+                        var certificate = X509CertificateLoader.LoadPkcs12FromFile(
+                            certificateConfiguration.SigningCertificatePfxFilePath, 
+                            certificateConfiguration.SigningCertificatePfxFilePassword);
+                        builder.AddSigningCredential(certificate);
                     }
                     catch (Exception e)
                     {
@@ -161,7 +164,10 @@ namespace Skoruba.IdentityServer4.STS.Identity.Helpers
                 {
                     try
                     {
-                        builder.AddValidationKey(new X509Certificate2(certificateConfiguration.ValidationCertificatePfxFilePath, certificateConfiguration.ValidationCertificatePfxFilePassword));
+                        var certificate = X509CertificateLoader.LoadPkcs12FromFile(
+                            certificateConfiguration.ValidationCertificatePfxFilePath, 
+                            certificateConfiguration.ValidationCertificatePfxFilePassword);
+                        builder.AddValidationKey(certificate);
 
                     }
                     catch (Exception e)
