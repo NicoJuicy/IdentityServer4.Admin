@@ -4,36 +4,15 @@
 
 > The administration for the IdentityServer4 and Asp.Net Core Identity
 
-## Big Thanks 🙏🏻 and an Update on the Project ⚡️
+## Project Status
 
-I just want to say a huge **THANK YOU** to everyone who has contributed to **IdentityServer4.Admin** over the years. Reaching almost **4,000 stars** ⭐️ on GitHub has been such an incredible milestone, and it is all thanks to this **amazing community**. I truly could not have done it without you.
+This project has been successfully upgraded to **.NET 10**. 
 
-With the end of support for **.NET 6** and **IdentityServer4**, I have made the decision to **stop maintaining this repository**.
-
-### But do not worry—this is not goodbye!
-
-I am excited to introduce my new project: [**Duende IdentityServer Admin**](https://github.com/skoruba/Duende.IdentityServer.Admin).
-
-This is the next evolution of this project and is **fully supported**. I would love for you to **check it out** and join me on this journey. 😊
-
-Thanks again for everything—your contributions, feedback, and support have meant so much to me. I hope to see you over on the new project!
-
-### Need help migrating?
-
-If you need any assistance migrating to **Duende IdentityServer**, feel free to reach out:
-- **Email:** [jan.skoruba@gmail.com](mailto:jan.skoruba@gmail.com)
-- **Social media:** Connect with me directly!  
-
-Looking forward to seeing you in the new repository. 🚀
-
-Cheers,  
-**Jan Skoruba ❤️**
-
-## 🎉 New version of Duende IdentityServer Admin UI available [here](https://github.com/skoruba/Duende.IdentityServer.Admin) ⚡
+**Note:** IdentityServer4 has been deprecated and is no longer maintained. For new projects, consider using [Duende IdentityServer Admin](https://github.com/skoruba/Duende.IdentityServer.Admin), which provides official support and continued development.
 
 ## Requirements
 
-- [Install](https://www.microsoft.com/net/download/windows#/current) the latest .NET 6 SDK (using older versions may lead to 502.5 errors when hosted on IIS or application exiting immediately after starting when self-hosted)
+- [Install](https://www.microsoft.com/net/download/windows#/current) the latest .NET 10 SDK (using older versions may lead to 502.5 errors when hosted on IIS or application exiting immediately after starting when self-hosted)
 
 ## Installation via dotnet new template
 
@@ -802,43 +781,6 @@ This web application is based on these projects:
 - AutoMapper
 - Serilog
 
-Thanks to [Tomáš Hübelbauer](https://github.com/TomasHubelbauer) for the initial code review.
-
 Thanks to [Dominick Baier](https://github.com/leastprivilege) and [Brock Allen](https://github.com/brockallen) - the creators of IdentityServer4.
 
-## Contributors
-
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
-
-<!-- prettier-ignore-start -->
-| [<img src="https://avatars3.githubusercontent.com/u/35664089?s=460&v=3" width="100px;"/><br /><sub> Jan Škoruba</sub>](https://github.com/skoruba) <br /> 💻 💬 📖 💡 🤔 | [<img src="https://avatars0.githubusercontent.com/u/6831144?s=460&v=3" width="100px;"/><br /><sub> Tomáš Hübelbauer</sub>](https://github.com/TomasHubelbauer) <br /> 💻 👀 📖  🤔 | [<img src="https://avatars0.githubusercontent.com/u/1004852?s=460&v=3" width="100px;"/><br /><sub>Michał Drzał </sub>](https://github.com/xmichaelx) <br />💻 👀 📖 💡 🤔 | [<img src="https://avatars0.githubusercontent.com/u/2261603?s=460&v=3" width="100px;"/><br /><sub>cerginio </sub>](https://github.com/cerginio) <br /> 💻 🐛 💡 🤔 | [<img src="https://avatars3.githubusercontent.com/u/13407080?s=460&v=3" width="100px;"/><br /><sub>Sven Dummis </sub>](https://github.com/svendu) <br /> 📖| [<img src="https://avatars1.githubusercontent.com/u/1687087?s=460&v=3" width="100px;"/><br /><sub>Seaear</sub>](https://github.com/Seaear) <br />💻 🌍|
-| :---: | :---: | :---: | :---: | :---: | :---: |
-|[<img src="https://avatars1.githubusercontent.com/u/1150473?s=460&v=3" width="118px;"/><br /><sub>Rune Antonsen </sub>](https://github.com/ruant) <br />🐛|[<img src="https://avatars1.githubusercontent.com/u/5537607?s=460&v=3" width="118px;"/><br /><sub>Sindre Njøsen </sub>](https://github.com/Sindrenj) <br />💻|[<img src="https://avatars1.githubusercontent.com/u/40323674?s=460&v=3" width="118px;"/><br /><sub>Alevtina Brown </sub>](https://github.com/alev7ina) <br />🌍|[<img src="https://avatars3.githubusercontent.com/u/29726153?s=460&v=3" width="118px;"/><br /><sub>Brice </sub>](https://github.com/Brice-xCIT) <br />💻|[<img src="https://avatars0.githubusercontent.com/u/17114154?s=460&v=3" width="118px;"/><br /><sub>TheEvilPenguin </sub>](https://github.com/TheEvilPenguin) <br />💻|[<img src="https://avatars3.githubusercontent.com/u/15545395?s=460&v=3" width="118px;"/><br /><sub>Saeed Rahmani </sub>](https://github.com/saeedrahmo) <br />🌍|
-|[<img src="https://avatars0.githubusercontent.com/u/15867612?s=460&v=3" width="118px;"/><br /><sub>Andy Yu </sub>](https://github.com/Zyxious) <br />🌍|[<img src="https://avatars2.githubusercontent.com/u/51412447?s=400&v=3" width="118px;"/><br /><sub>ChrisSzabo </sub>](https://github.com/ChrisSzabo) <br />💻|[<img src="https://avatars1.githubusercontent.com/u/6860441?s=400&v=3" width="118px;"/><br /><sub>aiscrim </sub>](https://github.com/aiscrim) <br />💻 💡 🤔|[<img src="https://avatars2.githubusercontent.com/u/12528083?s=400&v=3" width="118px;"/><br /><sub>HrDahl </sub>](https://github.com/HrDahl) <br />🌍|[<img src="https://avatars0.githubusercontent.com/u/3269687?s=400&v=4" width="118px;"/><br /><sub>Andrew Godfroy </sub>](https://github.com/killerrin) <br />📖|[<img src="https://avatars0.githubusercontent.com/u/391353?s=400&v=3" width="118px;"/><br /><sub>bravecobra </sub>](https://github.com/bravecobra) <br />💻|
-|[<img src="https://avatars0.githubusercontent.com/u/449663?s=400&v=3" width="118px;"/><br /><sub>Sabit Igde </sub>](https://github.com/sabitertan) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/7965212?s=400&v=3" width="118px;"/><br /><sub>Rico Herlt </sub>](https://github.com/rherlt) <br />💻|[<img src="https://avatars0.githubusercontent.com/u/1926879?s=400&v=3" width="118px;"/><br /><sub>b0 </sub>](https://github.com/b0) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/1941149?s=400&v=3" width="118px;"/><br /><sub>DrQwertySilence </sub>](https://github.com/DrQwertySilence) <br />🌍|[<img src="https://avatars2.githubusercontent.com/u/3332745?s=400&v=3" width="118px;"/><br /><sub>Carl Quirion </sub>](https://github.com/nlz242) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/43409914?s=400&v=3" width="118px;"/><br /><sub>Aegide </sub>](https://github.com/Aegide) <br />🌍|
-|[<img src="https://avatars0.githubusercontent.com/u/12243486?s=400&v=3" width="118px;"/><br /><sub>LobsterBandit </sub>](https://github.com/LobsterBandit) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/3465794?s=400&v=3" width="118px;"/><br /><sub>Mehmet Perk </sub>](https://github.com/mperk) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/46886295?s=400&v=3" width="118px;"/><br /><sub>tapmui </sub>](https://github.com/tapmui) <br />🌍|[<img src="https://avatars0.githubusercontent.com/u/12451743?s=400&v=3" width="118px;"/><br /><sub>Saeed Rahimi </sub>](https://github.com/saeedrahimi) <br />💻|[<img src="https://avatars3.githubusercontent.com/u/10605614?s=400&u=9d5f1bca5e31db4eb1975bd5043be2972aa32519&v=3" width="118px;"/><br /><sub>Joshua Williams </sub>](https://github.com/jwilliamsnephos) <br />💻|[<img src="https://avatars3.githubusercontent.com/u/12607748?s=400&u=189a0ff36baaeab34250062fe26ed13a1b78c011&v=3" width="118px;"/><br /><sub>Shengjie Yan </sub>](https://github.com/sheng-jie) <br />💻
-|[<img src="https://avatars3.githubusercontent.com/u/18211871?s=400&u=a994693d3f5d7c5d5365a635af54106452bc16cb&v=3" width="118px;"/><br /><sub>Anatoliy </sub>](https://github.com/UspAN) <br />💻|[<img src="https://avatars0.githubusercontent.com/u/3778268?s=400&u=1702548638153e09cf51d2a80731c7f33ea9185f&v=3" width="118px;"/><br /><sub>Nicholas Peterson </sub>](https://github.com/nickelbob) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/13870734?s=400&u=cbc2f60b6cd630a286b7e7b1c157951287f25563&v=3" width="118px;"/><br /><sub>Alec Papierniak </sub>](https://github.com/AlecPapierniak) <br />💻|[<img src="https://avatars0.githubusercontent.com/u/33623601?s=400&u=53a2bb57c68045766f11fcc5fd6d0282992fec39&v=3" width="118px;"/><br /><sub>Carl Reid </sub>](https://github.com/carlreid) <br />💻|[<img src="https://avatars1.githubusercontent.com/u/12170676?s=400&u=5053e27317b4f7f577504aa0c1c3fddc0dbcbb89&v=3" width="118px;"/><br /><sub>ViRuSTriNiTy </sub>](https://github.com/ViRuSTriNiTy) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/10232683?s=400&v=3" width="118px;"/><br /><sub>J. Arturo </sub>](https://github.com/zinkpad) <br />💻
-|[<img src="https://avatars1.githubusercontent.com/u/7604648?s=400&u=59a1ce466533aadb4c02944805c62957935b0ba9&v=3" width="118px;"/><br /><sub>Weihan Li </sub>](https://github.com/WeihanLi) <br />💻|[<img src="https://avatars3.githubusercontent.com/u/4563019?s=400&v=3" width="118px;"/><br /><sub>Saša Tančev </sub>](https://github.com/tancevsasa) <br />💻|[<img src="https://avatars1.githubusercontent.com/u/12811343?s=400&u=a417cca5ea7e206ecd979d2f623502bc766a504c&v=3" width="118px;"/><br /><sub>cuibty </sub>](https://github.com/cuibty) <br />💻|[<img src="https://avatars3.githubusercontent.com/u/17126867?s=400&u=387bb1de303c993b683cd1335f57a96e1671be45&v=3" width="118px;"/><br /><sub>Simo Paasisalo </sub>](https://github.com/spaasis) <br />💻|[<img src="https://avatars1.githubusercontent.com/u/10352866?s=400&v=3" width="118px;"/><br /><sub>klyse </sub>](https://github.com/klyse) <br />💻|[<img src="https://avatars0.githubusercontent.com/u/19854428?s=400&u=d0f37a7f51e8eaac4da754c9f8deae714e03da65&v=3" width="118px;"/><br /><sub>Martinus Suherman </sub>](https://github.com/martinussuherman) <br />💻
-|[<img src="https://avatars1.githubusercontent.com/u/540241?s=400&v=3" width="118px;"/><br /><sub>Pavel Usachev </sub>](https://github.com/pavel-usachev) <br />💻|[<img src="https://avatars2.githubusercontent.com/u/64419131?s=400&u=e18b51ba9a0c1c2bf69ed86fba2251b44c1c3136&v=3" width="118px;"/><br /><sub>LabTrans - STIGeo </sub>](https://github.com/labtrans-ufsc) <br />🌍|[<img src="https://avatars1.githubusercontent.com/u/7376668?s=400&u=93af8ae5f2980c172f2ca13b5380f20a50053866&v=4" width="118px;"/><br /><sub>Valentin LECERF </sub>](https://github.com/ioxFR) <br />💻|[<img src="https://avatars0.githubusercontent.com/u/9968151?s=400&u=c210e5d589ec6433069105d1420bf3d8cb6265f2&v=4" width="118px;"/><br /><sub>Thomas Aunvik </sub>](https://github.com/ThomasAunvik) <br />🐛|[<img src="https://avatars1.githubusercontent.com/u/661509?s=400&u=16eeaa522ebe0f92ef2851b7bbf721f349b815b5&v=4" width="118px;"/><br /><sub>Sebastian Gebhardt </sub>](https://github.com/sgebhardt) <br />🐛
-<!-- prettier-ignore-end -->
-
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification.
-Contributions of any kind are welcome!
-
-## Contact and Suggestion
-
-I am happy to share my attempt of the implementation of the administration for IdentityServer4 and ASP.NET Core Identity.
-
-Any feedback is welcome - feel free to create an issue or send me an email - [jan@skoruba.com](mailto:jan@skoruba.com). Thank you :blush:
-
-## Support and Donation 🕊️
-
-If you like my work, you can support me by donation. 👍
-
-### Paypal
-
-https://www.paypal.me/skoruba
-
-### Patreon
-
-https://www.patreon.com/skoruba
+For the full list of contributors, see [CONTRIBUTORS.md](https://github.com/skoruba/IdentityServer4.Admin/graphs/contributors).
