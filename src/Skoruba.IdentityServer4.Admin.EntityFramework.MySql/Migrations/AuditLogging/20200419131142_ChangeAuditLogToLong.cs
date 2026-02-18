@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
+using MySql.EntityFrameworkCore.Metadata;
 
 namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.AuditLogging
 {
@@ -13,8 +14,8 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.AuditLo
                 nullable: false,
                 oldClrType: typeof(int),
                 oldType: "int")
-                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
-                .OldAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
+                .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn)
+                .OldAnnotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -25,8 +26,8 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.AuditLo
                 type: "int",
                 nullable: false,
                 oldClrType: typeof(long))
-                .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn)
-                .OldAnnotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn);
+                .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn)
+                .OldAnnotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn);
         }
     }
 }

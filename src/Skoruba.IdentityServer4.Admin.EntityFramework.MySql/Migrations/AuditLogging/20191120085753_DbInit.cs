@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
+using MySql.EntityFrameworkCore.Metadata;
 
 namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.AuditLogging
 {
@@ -13,7 +14,7 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.AuditLo
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Event = table.Column<string>(nullable: true),
                     Source = table.Column<string>(nullable: true),
                     Category = table.Column<string>(nullable: true),

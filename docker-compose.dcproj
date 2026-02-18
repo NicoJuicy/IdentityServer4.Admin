@@ -9,6 +9,7 @@
     <DockerServiceName>skoruba.identityserver4.admin</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
+    <None Include=".github\upgrades\scenarios\new-dotnet-version_6cca88\plan.md" />
     <None Include="docker-compose.vs.debug.yml">
       <DependentUpon>docker-compose.yml</DependentUpon>
     </None>

@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
+using MySql.EntityFrameworkCore.Metadata;
 
 namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.Logging
 {
@@ -13,7 +14,7 @@ namespace Skoruba.IdentityServer4.Admin.EntityFramework.MySql.Migrations.Logging
                 columns: table => new
                 {
                     Id = table.Column<long>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("MySql:ValueGenerationStrategy", MySQLValueGenerationStrategy.IdentityColumn),
                     Message = table.Column<string>(nullable: true),
                     MessageTemplate = table.Column<string>(nullable: true),
                     Level = table.Column<string>(maxLength: 128, nullable: true),
