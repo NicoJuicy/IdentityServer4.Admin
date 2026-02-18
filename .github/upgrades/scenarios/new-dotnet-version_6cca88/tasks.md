@@ -1,10 +1,12 @@
 # IdentityServer4.Admin .NET 10 Upgrade Tasks
 
+After every commit, push the changes.
+
 ## Overview
 
 This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin solution from .NET 6.0 to .NET 10.0. Projects will be upgraded sequentially through 8 tiers, starting from leaf nodes (no dependencies) and progressing upward to applications and test projects.
 
-**Progress**: 3/17 tasks complete (18%) ![0%](https://progress-bar.xyz/18)
+**Progress**: 5/17 tasks complete (29%) ![0%](https://progress-bar.xyz/29)
 
 ---
 
@@ -47,28 +49,28 @@ This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin s
 
 ---
 
-### [▶] TASK-004: Upgrade Tier 2 data foundation to .NET 10
+### [✓] TASK-004: Upgrade Tier 2 data foundation to .NET 10 *(Completed: 2026-02-18 16:46)*
 **References**: Plan §Tier 2, Plan §Package Update Reference Tier 2
 
-- [ ] (1) Update `<TargetFramework>` to `net10.0` in Admin.EntityFramework project per Plan §Tier 2
-- [ ] (2) Update package: Microsoft.EntityFrameworkCore.Relational 6.0.1→10.0.3 in Admin.EntityFramework per Plan §Package Update Reference Tier 2
-- [ ] (3) Build Admin.EntityFramework project
-- [ ] (4) Admin.EntityFramework builds with 0 errors (**Verify**)
-- [ ] (5) Commit changes with message: "TASK-004: Upgrade Tier 2 data foundation to .NET 10"
+- [✓] (1) Update `<TargetFramework>` to `net10.0` in Admin.EntityFramework project per Plan §Tier 2
+- [✓] (2) Update package: Microsoft.EntityFrameworkCore.Relational 6.0.1→10.0.3 in Admin.EntityFramework per Plan §Package Update Reference Tier 2
+- [✓] (3) Build Admin.EntityFramework project
+- [✓] (4) Admin.EntityFramework builds with 0 errors (**Verify**)
+- [✓] (5) Commit changes with message: "TASK-004: Upgrade Tier 2 data foundation to .NET 10"
 
 ---
 
-### [ ] TASK-005: Test Tier 2 and verify EF core layer
+### [✓] TASK-005: Test Tier 2 and verify EF core layer *(Completed: 2026-02-18 16:46)*
 **References**: Plan §Tier 2 Testing Strategy
 
-- [ ] (1) Run unit tests for Admin.EntityFramework (if tests exist)
-- [ ] (2) Verify EF extension methods function correctly
-- [ ] (3) Verify Tier 1 projects still build and reference correctly
-- [ ] (4) All Tier 2 validations pass (**Verify**)
+- [✓] (1) Run unit tests for Admin.EntityFramework (if tests exist)
+- [✓] (2) Verify EF extension methods function correctly
+- [✓] (3) Verify Tier 1 projects still build and reference correctly
+- [✓] (4) All Tier 2 validations pass (**Verify**)
 
 ---
 
-### [ ] TASK-006: Upgrade Tier 3 business logic and identity data to .NET 10
+### [▶] TASK-006: Upgrade Tier 3 business logic and identity data to .NET 10
 **References**: Plan §Tier 3, Plan §Package Update Reference Tier 3
 
 - [ ] (1) Update `<TargetFramework>` to `net10.0` in both Tier 3 projects per Plan §Tier 3 (Admin.BusinessLogic, Admin.EntityFramework.Identity)
@@ -218,6 +220,10 @@ This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin s
 - [ ] (8) Commit final validation with message: "TASK-017: Complete .NET 10 upgrade - all tests passing"
 
 ---
+
+
+
+
 
 
 

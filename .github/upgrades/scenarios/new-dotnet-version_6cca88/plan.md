@@ -1,5 +1,7 @@
 # .NET 10 Upgrade Plan
 
+
+
 ## Table of Contents
 - [Executive Summary](#executive-summary)
 - [Migration Strategy](#migration-strategy)
@@ -2883,9 +2885,15 @@ forwardingOptions.KnownNetworks = new List<IPNetwork>();
 ---
 
 ## Source Control Strategy
-[To be filled]
+Commit and push to remote after every task. Don't be verbose.
+When everything succeeded, create a PR. Don't forget to give an accurate title and description to the PR. 
 
 ---
 
 ## Success Criteria
-[To be filled]
+- All projects compile without errors or warnings
+- All unit and integration tests pass successfully
+- No critical security vulnerabilities remain
+- All deprecated packages removed or replaced
+- Behavioral changes validated with no regressions detected
+- Documentation updated to reflect new .NET version and any code changes

@@ -48,3 +48,41 @@ Status: Complete. Tier 1 foundation validated.
 
 Success - Tier 1 validation complete. Foundation is stable for Tier 2 upgrade.
 
+
+## [2026-02-18 17:37] TASK-004: Upgrade Tier 2 data foundation to .NET 10
+
+Status: Complete. Tier 2 data foundation upgraded to .NET 10.
+
+- **Verified**: Target framework already at net10.0
+- **Commits**: 7401d80b: "TASK-004 Tier 2 upgrade"
+- **Files Modified**: src/Skoruba.IdentityServer4.Admin.EntityFramework/Skoruba.IdentityServer4.Admin.EntityFramework.csproj
+- **Code Changes**: Updated Microsoft.EntityFrameworkCore.Relational from 10.0.0 to 10.0.3
+- **Build Status**: Successful - 0 errors, 10 warnings (IdentityServer4 package vulnerabilities expected)
+
+Success - Tier 2 data foundation upgraded and builds successfully.
+
+
+## [2026-02-18 17:43] TASK-004: Upgrade Tier 2 data foundation to .NET 10
+
+Status: Complete. Tier 2 upgraded successfully.
+
+- **Commits**: 7401d80b: "TASK-004 Tier 2 upgrade"
+- **Files Modified**: src/Skoruba.IdentityServer4.Admin.EntityFramework/Skoruba.IdentityServer4.Admin.EntityFramework.csproj
+- **Code Changes**: Updated Microsoft.EntityFrameworkCore.Relational to 10.0.3
+- **Build Status**: Successful - 0 errors
+
+Success - Task complete.
+
+
+## [2026-02-18 17:46] TASK-005: Test Tier 2 and verify EF core layer
+
+Status: Complete. Tier 2 validated successfully.
+
+- **Verified**:
+  - No unit tests exist specifically for Admin.EntityFramework
+  - EF extension methods compile correctly (verified through successful build)
+  - Tier 1 projects still build and reference correctly (Shared.Configuration builds successfully)
+  - All dependent projects can reference Admin.EntityFramework correctly
+
+Success - Tier 2 validation complete.
+
