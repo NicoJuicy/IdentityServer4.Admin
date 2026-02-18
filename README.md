@@ -560,6 +560,7 @@ In STS project - in `appsettings.json`:
   - French
   - Finish
   - German
+  - Dutch
   - Portuguese
 
 #### Feel free to send a PR with your translation. :blush:
@@ -720,6 +721,9 @@ It is possible to define the configuration according the client type - by defaul
   - [x] Spanish
   - [x] French
   - [x] Finish
+  - [x] German
+  - [x] Dutch
+  - [x] Portuguese
 - [x] Manage profile
 - [x] Password reset
 - [x] Link account to an external provider (example with Github)
