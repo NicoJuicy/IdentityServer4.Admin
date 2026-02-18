@@ -6,7 +6,7 @@ After every commit, push the changes.
 
 This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin solution from .NET 6.0 to .NET 10.0. Projects will be upgraded sequentially through 8 tiers, starting from leaf nodes (no dependencies) and progressing upward to applications and test projects.
 
-**Progress**: 14/17 tasks complete (82%) ![0%](https://progress-bar.xyz/82)
+**Progress**: 15/17 tasks complete (88%) ![0%](https://progress-bar.xyz/88)
 
 ---
 
@@ -195,19 +195,19 @@ This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin s
 
 ---
 
-### [▶] TASK-016: Upgrade Tier 8 test projects to .NET 10
+### [✓] TASK-016: Upgrade Tier 8 test projects to .NET 10 *(Completed: 2026-02-18 17:21)*
 **References**: Plan §Tier 8, Plan §Package Update Reference Tier 8
 
-- [ ] (1) Update `<TargetFramework>` to `net10.0` in all 4 Tier 8 test projects per Plan §Tier 8 (Admin.Api.IntegrationTests, Admin.IntegrationTests, Admin.UnitTests, STS.Identity.IntegrationTests)
-- [ ] (2) Update packages in Admin.Api.IntegrationTests: Microsoft.AspNetCore.Mvc.Testing 6.0.1→10.0.3 per Plan §Package Update Reference Tier 8
-- [ ] (3) Update packages in Admin.IntegrationTests: Mvc.Testing and TestHost 6.0.1→10.0.3 per Plan §Package Update Reference Tier 8
-- [ ] (4) Build all 4 Tier 8 test projects
-- [ ] (5) All Tier 8 test projects build with 0 errors (**Verify**)
-- [ ] (6) Commit changes with message: "TASK-016: Upgrade Tier 8 test projects to .NET 10"
+- [✓] (1) Update `<TargetFramework>` to `net10.0` in all 4 Tier 8 test projects per Plan §Tier 8 (Admin.Api.IntegrationTests, Admin.IntegrationTests, Admin.UnitTests, STS.Identity.IntegrationTests)
+- [✓] (2) Update packages in Admin.Api.IntegrationTests: Microsoft.AspNetCore.Mvc.Testing 6.0.1→10.0.3 per Plan §Package Update Reference Tier 8
+- [✓] (3) Update packages in Admin.IntegrationTests: Mvc.Testing and TestHost 6.0.1→10.0.3 per Plan §Package Update Reference Tier 8
+- [✓] (4) Build all 4 Tier 8 test projects
+- [✓] (5) All Tier 8 test projects build with 0 errors (**Verify**)
+- [✓] (6) Commit changes with message: "TASK-016: Upgrade Tier 8 test projects to .NET 10"
 
 ---
 
-### [ ] TASK-017: Run comprehensive test suite and validate upgrade
+### [▶] TASK-017: Run comprehensive test suite and validate upgrade
 **References**: Plan §Testing & Validation Strategy, Plan §Success Criteria
 
 - [ ] (1) Run all tests in Admin.Api.IntegrationTests project
@@ -220,6 +220,8 @@ This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin s
 - [ ] (8) Commit final validation with message: "TASK-017: Complete .NET 10 upgrade - all tests passing"
 
 ---
+
+
 
 
 
