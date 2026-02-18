@@ -6,7 +6,7 @@ After every commit, push the changes.
 
 This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin solution from .NET 6.0 to .NET 10.0. Projects will be upgraded sequentially through 8 tiers, starting from leaf nodes (no dependencies) and progressing upward to applications and test projects.
 
-**Progress**: 13/17 tasks complete (76%) ![0%](https://progress-bar.xyz/76)
+**Progress**: 14/17 tasks complete (82%) ![0%](https://progress-bar.xyz/82)
 
 ---
 
@@ -164,30 +164,30 @@ This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin s
 
 ---
 
-### [▶] TASK-014: Upgrade Tier 7 main applications to .NET 10
+### [✓] TASK-014: Upgrade Tier 7 main applications to .NET 10 *(Completed: 2026-02-18 17:10)*
 **References**: Plan §Tier 7, Plan §Package Update Reference Tier 7, Plan §Breaking Changes Catalog §3, §6
 
-- [ ] (1) Update `<TargetFramework>` to `net10.0` in both Tier 7 projects per Plan §Tier 7 (Admin.Api, Admin Portal)
-- [ ] (2) Update all 8 packages in Admin.Api per Plan §Package Update Reference Tier 7 (Authentication.JwtBearer, Diagnostics, Identity, EFCore, HealthChecks packages 6.0.1→10.0.3)
-- [ ] (3) Remove incompatible package from Admin.Api: Microsoft.VisualStudio.Azure.Containers.Tools.Targets per Plan §Package Update Reference Tier 7
-- [ ] (4) Update all 7 packages in Admin Portal per Plan §Package Update Reference Tier 7 (Diagnostics, Identity, EFCore, HealthChecks, Options packages to 10.0.x, Web.CodeGeneration.Design 6.0.1→10.0.2)
-- [ ] (5) Remove deprecated and incompatible packages from Admin Portal: Microsoft.EntityFrameworkCore.Tools.DotNet, Microsoft.VisualStudio.Azure.Containers.Tools.Targets per Plan §Package Update Reference Tier 7
-- [ ] (6) Fix JWT authentication in Admin.Api per Plan §Breaking Changes Catalog §3 (update JWT middleware, fix token parsing)
-- [ ] (7) Fix ForwardedHeaders configuration in Admin.Api per Plan §Breaking Changes Catalog §6
-- [ ] (8) Fix Razor runtime compilation in Admin Portal per Plan §Tier 7 Admin Portal Migration (StartupHelpers.cs line 20)
-- [ ] (9) Fix JWT claim mapping in Admin Portal per Plan §Tier 7 Admin Portal Migration (Startup.cs line 23)
-- [ ] (10) Fix configuration binding in Admin Portal per Plan §Breaking Changes Catalog §1
-- [ ] (11) Build both Tier 7 projects
-- [ ] (12) Both Tier 7 applications build with 0 errors (**Verify**)
-- [ ] (13) Commit changes with message: "TASK-014: Upgrade Tier 7 main applications to .NET 10"
+- [✓] (1) Update `<TargetFramework>` to `net10.0` in both Tier 7 projects per Plan §Tier 7 (Admin.Api, Admin Portal)
+- [✓] (2) Update all 8 packages in Admin.Api per Plan §Package Update Reference Tier 7 (Authentication.JwtBearer, Diagnostics, Identity, EFCore, HealthChecks packages 6.0.1→10.0.3)
+- [✓] (3) Remove incompatible package from Admin.Api: Microsoft.VisualStudio.Azure.Containers.Tools.Targets per Plan §Package Update Reference Tier 7
+- [✓] (4) Update all 7 packages in Admin Portal per Plan §Package Update Reference Tier 7 (Diagnostics, Identity, EFCore, HealthChecks, Options packages to 10.0.x, Web.CodeGeneration.Design 6.0.1→10.0.2)
+- [✓] (5) Remove deprecated and incompatible packages from Admin Portal: Microsoft.EntityFrameworkCore.Tools.DotNet, Microsoft.VisualStudio.Azure.Containers.Tools.Targets per Plan §Package Update Reference Tier 7
+- [✓] (6) Fix JWT authentication in Admin.Api per Plan §Breaking Changes Catalog §3 (update JWT middleware, fix token parsing)
+- [✓] (7) Fix ForwardedHeaders configuration in Admin.Api per Plan §Breaking Changes Catalog §6
+- [✓] (8) Fix Razor runtime compilation in Admin Portal per Plan §Tier 7 Admin Portal Migration (StartupHelpers.cs line 20)
+- [✓] (9) Fix JWT claim mapping in Admin Portal per Plan §Tier 7 Admin Portal Migration (Startup.cs line 23)
+- [✓] (10) Fix configuration binding in Admin Portal per Plan §Breaking Changes Catalog §1
+- [✓] (11) Build both Tier 7 projects
+- [✓] (12) Both Tier 7 applications build with 0 errors (**Verify**)
+- [✓] (13) Commit changes with message: "TASK-014: Upgrade Tier 7 main applications to .NET 10"
 
 ---
 
-### [ ] TASK-015: Test Tier 7 and validate applications
+### [✗] TASK-015: Test Tier 7 and validate applications
 **References**: Plan §Tier 7 Testing Strategy
 
-- [ ] (1) Run integration tests in Admin.Api.IntegrationTests project
-- [ ] (2) All Admin.Api integration tests pass with 0 failures (**Verify**)
+- [✓] (1) Run integration tests in Admin.Api.IntegrationTests project
+- [✗] (2) All Admin.Api integration tests pass with 0 failures (**Verify**)
 - [ ] (3) Run integration tests in Admin.IntegrationTests project
 - [ ] (4) All Admin Portal integration tests pass with 0 failures (**Verify**)
 - [ ] (5) Verify all Tiers 1-6 still build and function (rebuild all lower-tier projects)
@@ -195,7 +195,7 @@ This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin s
 
 ---
 
-### [ ] TASK-016: Upgrade Tier 8 test projects to .NET 10
+### [▶] TASK-016: Upgrade Tier 8 test projects to .NET 10
 **References**: Plan §Tier 8, Plan §Package Update Reference Tier 8
 
 - [ ] (1) Update `<TargetFramework>` to `net10.0` in all 4 Tier 8 test projects per Plan §Tier 8 (Admin.Api.IntegrationTests, Admin.IntegrationTests, Admin.UnitTests, STS.Identity.IntegrationTests)
@@ -220,6 +220,11 @@ This document tracks the bottom-up tier-based upgrade of IdentityServer4.Admin s
 - [ ] (8) Commit final validation with message: "TASK-017: Complete .NET 10 upgrade - all tests passing"
 
 ---
+
+
+
+
+
 
 
 

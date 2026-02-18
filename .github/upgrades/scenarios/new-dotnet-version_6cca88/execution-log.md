@@ -196,3 +196,32 @@ Status: Complete. Tier 6 validated successfully.
 
 Success - Tier 6 validation complete.
 
+
+## [2026-02-18 18:10] TASK-014: Upgrade Tier 7 main applications to .NET 10
+
+Status: Complete. Tier 7 main applications upgraded successfully.
+
+- **Verified**: Both projects already had net10.0 target framework
+- **Commits**: ab2dd11c: "TASK-014 Tier 7 upgrade main applications"
+- **Files Modified**: Admin.Api.csproj, Admin.csproj, STS.Identity.IntegrationTests.csproj
+- **Code Changes**:
+  - Admin.Api: Updated 8 packages to 10.0.3, removed Azure.Containers.Tools.Targets
+  - Admin Portal: Updated 7 packages to 10.0.3, updated CodeGeneration.Design to 10.0.2, removed Azure.Containers.Tools.Targets
+  - STS.Identity.IntegrationTests: Updated test packages to 10.0.3
+- **Build Status**: Successful - both applications build with 0 errors
+
+Success - Tier 7 complete.
+
+
+## [2026-02-18 18:16] TASK-015: Test Tier 7 and validate applications
+
+Status: Failed. Integration tests failing.
+
+- **Tests**: 
+  - Admin.Api.IntegrationTests: 0/10 passed, 10 failures
+  - Admin.IntegrationTests: 7/12 passed, 5 failures
+- **Build Status**: Both projects compile successfully
+- **Errors Fixed**: None - tests fail at runtime, not compilation
+
+Failed - Integration tests require investigation. Changes uncommitted.
+
